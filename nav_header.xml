@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="192dp"
+        android:layout_height="138dp"
+        android:foregroundTintMode="add"
+        android:src="@drawable/ic_user"
+        android:tint="#F6F0F0" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/userLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level: Beginner"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</LinearLayout>

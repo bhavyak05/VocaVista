@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:title="Home" />
+    <item android:id="@+id/profile" android:title="Profile" />
+    <item android:id="@+id/cart" android:title="My Cart" />
+    <item android:id="@+id/nav_settings" android:title="Settings" />
+    <item android:id="@+id/nav_rateus" android:title="Rate Us" />
+    <item android:id="@+id/nav_contactus" android:title="Contact Us" />
+    <item android:id="@+id/logout" android:title="Logout" />
+</menu>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#420404"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSignUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignUpWithEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etEmailSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSignUpTitle"/>
+
+    <EditText
+        android:id="@+id/etPasswordSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etEmailSignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSignUpWithEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up with Email"
+        app:layout_constraintTop_toBottomOf="@id/etPasswordSignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#AEACAC"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnSignUpWithPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up with Phone"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUpWithEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#AEACAC"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnSignUpWithGoogle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up with Google"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUpWithPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#AEACAC"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvLoginPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="goToLogin"
+        android:text="Already have an account? "
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUpWithGoogle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

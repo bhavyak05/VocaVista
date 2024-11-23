@@ -1,0 +1,57 @@
+<!-- res/layout/recyclerview_courses.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/card_background"
+    android:layout_marginBottom="8dp">
+
+    <!-- Course Image -->
+    <ImageView
+        android:id="@+id/courseImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Course Image" />
+
+    <!-- Course Name -->
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <!-- Course Description -->
+    <TextView
+        android:id="@+id/courseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brief description of the course."
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- Course Price -->
+    <TextView
+        android:id="@+id/coursePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#111154"
+        android:text="Add to Cart"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

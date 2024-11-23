@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" android:background="@color/white">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Account Settings" android:textSize="24sp" android:textColor="@color/black" android:paddingBottom="24dp" android:textStyle="bold"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email" android:textSize="16sp" android:textColor="@color/black" android:paddingBottom="8dp"/>
+    <EditText android:id="@+id/edit_text_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter new email" android:inputType="textEmailAddress" android:backgroundTint="@color/black" android:padding="12dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contact Number" android:textSize="16sp" android:textColor="@color/black" android:paddingTop="16dp" android:paddingBottom="8dp"/>
+    <EditText android:id="@+id/edit_text_contact_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter new contact number" android:inputType="phone" android:backgroundTint="@color/black" android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/button_save_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#111154"
+        android:padding="12dp"
+        android:text="Save Changes"
+        android:textColor="@color/white" />
+</LinearLayout>

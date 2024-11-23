@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp" android:background="#F5F5F5">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:padding="16dp">
+        <!--  Title Text  -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="User Profile" android:textSize="28sp" android:textColor="#333333" android:textStyle="bold" android:paddingBottom="24dp"/>
+
+        <!--  Profile Image Card  -->
+        <androidx.cardview.widget.CardView android:layout_width="140dp" android:layout_height="140dp" android:layout_gravity="center_horizontal" android:layout_marginBottom="16dp" android:radius="70dp">
+            <ImageView android:id="@+id/profile_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Camera/Gallery Button  -->
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#111154"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="Capture/Select Photo"
+            android:textColor="#FFFFFF" />
+
+        <!--  Name EditText  -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:padding="16dp" android:radius="16dp" android:shadowColor="#B0BEC5">
+            <EditText android:id="@+id/name_edittext" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Name" android:textSize="18sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Age EditText  -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:padding="16dp" android:radius="16dp" android:shadowColor="#B0BEC5">
+            <EditText android:id="@+id/age_edittext" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Age" android:textSize="18sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Gender EditText  -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:padding="16dp" android:radius="16dp" android:shadowColor="#B0BEC5">
+            <EditText android:id="@+id/gender_edittext" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Gender" android:textSize="18sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Phone Number EditText  -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:padding="16dp" android:radius="16dp" android:shadowColor="#B0BEC5">
+            <EditText android:id="@+id/phone_edittext" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Phone Number" android:textSize="18sp" android:inputType="phone"/>
+        </androidx.cardview.widget.CardView>
+
+        <!--  Date of Birth EditText  -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:radius="16dp"
+            android:shadowColor="#B0BEC5">
+            <EditText
+                android:id="@+id/dob_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Date of Birth"
+                android:textSize="18sp"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--  Save Button  -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#111154"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="Save Profile"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

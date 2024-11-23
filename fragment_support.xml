@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Support" android:textSize="24sp" android:textStyle="bold"/>
+    <SearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:queryHint="Search FAQs..."/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view_faqs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+    <!--  Contact section for submitting queries  -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Can't find an answer? Send us your query:" android:textSize="18sp" android:layout_marginTop="20dp"/>
+    <EditText android:id="@+id/edit_text_query" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter your query here" android:padding="8dp" android:background="@android:drawable/edit_text"/>
+
+    <Button
+        android:id="@+id/button_send_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#111154"
+        android:padding="10dp"
+        android:text="Send Query" />
+</LinearLayout>
